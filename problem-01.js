@@ -6,7 +6,7 @@ console.log(propertyDivide);
 
 
 /** Problem -02 ( Cycle or Laptop ) */
-var money = 45000;
+var money = 10000;
 //write your code here
 if(money >= 25000) {
     console.log("Laptop");
@@ -20,7 +20,7 @@ else{
 
 
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 6;
+var lastDay = 11;
 //write your code here
 var dayStart = 1;
 for(var i = 1; i <= lastDay; i++){
@@ -34,7 +34,7 @@ for(var i = 1; i <= lastDay; i++){
 
 
 /** Problem 04 - (Delete / Store) */
-var fileName= "pdfData.DOCX";
+var fileName= "pdfData.jpg";
 //write your code here
 var alwaysLowerCase = fileName.toLowerCase();
 var extension = alwaysLowerCase.split(".");
