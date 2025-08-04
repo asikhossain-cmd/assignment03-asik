@@ -20,13 +20,14 @@ else{
 
 
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 11;
+var lastDay = 6;
 //write your code here
 var dayStart = 1;
-var rahimaMedicineDay = ["1 - rest", "2 - rest", "3 - medicine"]
-for(var i = 1; i <= 11; i++){
-    console.log(i, "-", "rest");
+for(var i = 1; i <= lastDay; i++){
+    if(i % 3 !== 0){
+        console.log(i, "-", "rest");
+    }
     if(i % 3 === 0){
-        console.log(i, "-", "medecine");
+        console.log(i, "-", "medicine");
     }
 }
