@@ -34,10 +34,11 @@ for(var i = 1; i <= lastDay; i++){
 
 
 /** Problem 04 - (Delete / Store) */
-var fileName= "pdfData.jpg";
+var fileName= "pdfData.DOCX";
 //write your code here
-var extension = fileName.split(".");
-var validateStart = fileName.startsWith("#");
+var alwaysLowerCase = fileName.toLowerCase();
+var extension = alwaysLowerCase.split(".");
+var validateStart = alwaysLowerCase.startsWith("#");
 // console.log(validateStart);
 
 if(extension.includes("pdf")){
@@ -54,16 +55,24 @@ else{
 }
 
 
-/** Problem 06 :  (Current Salary )  */
-var experience = 5;
-var startingSalary = 45000;
+/** Problem 05 - ( PH Email Generator )  */
+var student= { name: "jhankar" , roll: 1014 ,department: "cse"  };
 //write your code here
-var ratioCalculation = experience
-if(experience++){
-    console.log(experience)
-    console.log(startingSalary += (startingSalary * 0.05));
+var emailBody = student.name + student.roll + "." + student.department;
+console.log(emailBody + "@ph.ac.bd");
+
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalaryPresent = 45000;
+// write your code here
+var sumTotalSalary = startingSalaryPresent;
+for(var i = 1; i <= experience; i++){
+
+    var perYearIncrease = startingSalaryPresent * (5 / 100);
+    startingSalaryPresent += perYearIncrease;
 }
-else{
-    console.log(experience);
-    console.log(startingSalary);
-}
+
+
+console.log(startingSalaryPresent.toFixed(2));
