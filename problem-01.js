@@ -55,8 +55,15 @@ else{
 
 
 /** Problem 06 :  (Current Salary )  */
-var experience = 30;
+var experience = 5;
 var startingSalary = 45000;
 //write your code here
-var totalSalary = startingSalary * 5%
-console.log(totalSalary);
+var ratioCalculation = experience
+if(experience++){
+    console.log(experience)
+    console.log(startingSalary += (startingSalary * 0.05));
+}
+else{
+    console.log(experience);
+    console.log(startingSalary);
+}
