@@ -2,7 +2,7 @@
 var area = 800;
 //write your code here
 var propertyDivide = area / 2;
-console.log("Each person will get: ", propertyDivide);
+console.log(propertyDivide);
 
 
 /** Problem -02 ( Cycle or Laptop ) */
@@ -31,3 +31,32 @@ for(var i = 1; i <= lastDay; i++){
         console.log(i, "-", "medicine");
     }
 }
+
+
+/** Problem 04 - (Delete / Store) */
+var fileName= "pdfData.jpg";
+//write your code here
+var extension = fileName.split(".");
+var validateStart = fileName.startsWith("#");
+// console.log(validateStart);
+
+if(extension.includes("pdf")){
+    console.log("Store");
+}
+else if(extension.includes("docx")){
+    console.log("Store");
+}
+else if(validateStart != false){
+    console.log("Store");
+}
+else{
+    console.log("Delete");
+}
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+var totalSalary = startingSalary * 5%
+console.log(totalSalary);
